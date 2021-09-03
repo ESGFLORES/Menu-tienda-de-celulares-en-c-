@@ -29,6 +29,7 @@ namespace Formulario_MenuStrip
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ayuda));
             this.SuspendLayout();
             // 
             // ayuda
@@ -36,6 +37,7 @@ namespace Formulario_MenuStrip
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ayuda";
             this.Text = "Ayuda sobre Tecnosystem";
             this.ResumeLayout(false);

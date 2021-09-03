@@ -131,6 +131,7 @@ namespace Formulario_MenuStrip
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Envios_a_Domicilio";
             this.Text = "Envios_a_Domicilio";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

@@ -44,6 +44,11 @@ namespace Formulario_MenuStrip
             this.ayudaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.cuadrosDeDialogoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,10 +63,15 @@ namespace Formulario_MenuStrip
             this.acercadeToolStripMenuItem,
             this.ayudaToolStripMenuItem1,
             this.ayudaToolStripMenuItem2,
-            this.cuadrosDeDialogoToolStripMenuItem});
+            this.cuadrosDeDialogoToolStripMenuItem,
+            this.toolStripMenuItem1,
+            this.toolStripMenuItem2,
+            this.toolStripMenuItem3,
+            this.toolStripMenuItem4,
+            this.toolStripMenuItem5});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(847, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -78,21 +88,21 @@ namespace Formulario_MenuStrip
             // opcion1ToolStripMenuItem
             // 
             this.opcion1ToolStripMenuItem.Name = "opcion1ToolStripMenuItem";
-            this.opcion1ToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.opcion1ToolStripMenuItem.Size = new System.Drawing.Size(162, 26);
             this.opcion1ToolStripMenuItem.Text = "Gama Alta";
             this.opcion1ToolStripMenuItem.Click += new System.EventHandler(this.opcion1ToolStripMenuItem_Click);
             // 
             // oPcion2ToolStripMenuItem
             // 
             this.oPcion2ToolStripMenuItem.Name = "oPcion2ToolStripMenuItem";
-            this.oPcion2ToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.oPcion2ToolStripMenuItem.Size = new System.Drawing.Size(162, 26);
             this.oPcion2ToolStripMenuItem.Text = "Gama media";
             this.oPcion2ToolStripMenuItem.Click += new System.EventHandler(this.oPcion2ToolStripMenuItem_Click);
             // 
             // opcion3ToolStripMenuItem
             // 
             this.opcion3ToolStripMenuItem.Name = "opcion3ToolStripMenuItem";
-            this.opcion3ToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.opcion3ToolStripMenuItem.Size = new System.Drawing.Size(162, 26);
             this.opcion3ToolStripMenuItem.Text = "Gama baja";
             this.opcion3ToolStripMenuItem.Click += new System.EventHandler(this.opcion3ToolStripMenuItem_Click);
             // 
@@ -158,9 +168,37 @@ namespace Formulario_MenuStrip
             // cuadrosDeDialogoToolStripMenuItem
             // 
             this.cuadrosDeDialogoToolStripMenuItem.Name = "cuadrosDeDialogoToolStripMenuItem";
-            this.cuadrosDeDialogoToolStripMenuItem.Size = new System.Drawing.Size(147, 26);
-            this.cuadrosDeDialogoToolStripMenuItem.Text = "Cuadros de dialogo";
+            this.cuadrosDeDialogoToolStripMenuItem.Size = new System.Drawing.Size(151, 26);
+            this.cuadrosDeDialogoToolStripMenuItem.Text = "Cuadros de Dialogo";
             this.cuadrosDeDialogoToolStripMenuItem.Click += new System.EventHandler(this.cuadrosDeDialogoToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(53, 26);
+            this.toolStripMenuItem1.Text = "Salir";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(12, 26);
+            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(12, 26);
+            // 
+            // toolStripMenuItem4
+            // 
+            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(12, 26);
+            // 
+            // toolStripMenuItem5
+            // 
+            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(12, 26);
             // 
             // Dialogos
             // 
@@ -168,8 +206,9 @@ namespace Formulario_MenuStrip
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Plum;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(847, 450);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Dialogos";
@@ -200,6 +239,11 @@ namespace Formulario_MenuStrip
         private System.Windows.Forms.ToolStripMenuItem oPcion1ToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem opcion1ToolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem opcion2ToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
     }
 }
 

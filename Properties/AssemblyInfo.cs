@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 // conjunto de atributos. Cambie estos valores de atributo para modificar la información
 // asociada con un ensamblado.
 [assembly: AssemblyTitle("Smarphones Star")]
-[assembly: AssemblyDescription("Sistema de inventario")]
+[assembly: AssemblyDescription("Esta es una tienda en linea Smarphones (Star)")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Smarphones Star")]
 [assembly: AssemblyProduct("Formulario MenuStrip")]

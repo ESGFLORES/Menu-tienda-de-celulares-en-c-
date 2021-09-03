@@ -126,6 +126,7 @@ namespace Formulario_MenuStrip
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Sucursales";
             this.Text = "Sucursales";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

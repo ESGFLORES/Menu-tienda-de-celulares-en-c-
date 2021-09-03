@@ -82,5 +82,15 @@ namespace Formulario_MenuStrip
             Envios_a_Domicilio envios_A_Domicilio = new Envios_a_Domicilio();
             envios_A_Domicilio.ShowDialog();
         }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

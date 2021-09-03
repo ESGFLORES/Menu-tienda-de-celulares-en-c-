@@ -29,6 +29,7 @@ namespace Formulario_MenuStrip
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Gama_alta));
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -115,6 +116,7 @@ namespace Formulario_MenuStrip
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureGamaalta);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Gama_alta";
             this.Text = "Celulares Gama alta";
             ((System.ComponentModel.ISupportInitialize)(this.pictureGamaalta)).EndInit();

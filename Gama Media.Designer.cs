@@ -29,6 +29,7 @@ namespace Formulario_MenuStrip
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Gama_Media));
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -103,7 +104,7 @@ namespace Formulario_MenuStrip
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Info;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lblgm);
             this.Controls.Add(this.button3);
@@ -112,6 +113,7 @@ namespace Formulario_MenuStrip
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureGAmamedia);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Gama_Media";
             this.Text = "Gama_Media";
             ((System.ComponentModel.ISupportInitialize)(this.pictureGAmamedia)).EndInit();
