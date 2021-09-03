@@ -16,5 +16,15 @@ namespace Formulario_MenuStrip
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Enviar comentarios", "Su mensaje fue enviado, dentro de poco recibira ayuda");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
