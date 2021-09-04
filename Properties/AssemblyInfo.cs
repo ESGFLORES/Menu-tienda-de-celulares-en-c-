@@ -12,7 +12,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyCompany("Smarphones Star")]
 [assembly: AssemblyProduct("Formulario MenuStrip")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
-[assembly: AssemblyTrademark("Tecnocomputadoras S.A.")]
+[assembly: AssemblyTrademark("Smartphones S.A.")]
 [assembly: AssemblyCulture("")]
 
 // Si establece ComVisible en false, los tipos de este ensamblado no estarán visibles 

@@ -150,6 +150,7 @@ namespace Formulario_MenuStrip
             this.opcion2ToolStripMenuItem3.Name = "opcion2ToolStripMenuItem3";
             this.opcion2ToolStripMenuItem3.Size = new System.Drawing.Size(227, 26);
             this.opcion2ToolStripMenuItem3.Text = "Envios Internacionales";
+            this.opcion2ToolStripMenuItem3.Click += new System.EventHandler(this.opcion2ToolStripMenuItem3_Click);
             // 
             // ayudaToolStripMenuItem1
             // 

@@ -32,7 +32,7 @@ namespace Formulario_MenuStrip
         private void button3_Click(object sender, EventArgs e)
         {
             pictureGamaalta.Image = Formulario_MenuStrip.Properties.Resources.Xiaomi__Mi_11_Ultra;
-            label2.Text = "$ 500.00";
+            label2.Text = "$ 1,500.00";
         }
 
         private void label2_Click(object sender, EventArgs e)

@@ -92,5 +92,10 @@ namespace Formulario_MenuStrip
         {
             Close();
         }
+        private void opcion2ToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            Envios_internacionales envios = new Envios_internacionales();
+            envios.ShowDialog();
+        }
     }
 }
