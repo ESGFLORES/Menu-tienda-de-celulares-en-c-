@@ -29,22 +29,27 @@ namespace Formulario_MenuStrip
 
         private void button2_Click(object sender, EventArgs e)
         {
-            try
-            {
+            
+            
                 if (textBox1.Text == "usuario1" || textBox2.Text == "clave1")
                 {
                     Dialogos principal = new Dialogos();
                     principal.Show();
                     this.Hide();
                 }
-            }
-            catch
+            
+            else
             {
                 MessageBox.Show("Error de usuario o clave de acceso", "Error",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
 
+            
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

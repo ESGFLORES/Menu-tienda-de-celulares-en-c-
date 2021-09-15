@@ -36,6 +36,7 @@ namespace Formulario_MenuStrip
             this.label1 = new System.Windows.Forms.Label();
             this.lbmgb = new System.Windows.Forms.Label();
             this.pictureGamabaja = new System.Windows.Forms.PictureBox();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureGamabaja)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,7 +54,7 @@ namespace Formulario_MenuStrip
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button2.Location = new System.Drawing.Point(309, 301);
+            this.button2.Location = new System.Drawing.Point(297, 301);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(128, 37);
             this.button2.TabIndex = 2;
@@ -64,7 +65,7 @@ namespace Formulario_MenuStrip
             // button3
             // 
             this.button3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button3.Location = new System.Drawing.Point(470, 301);
+            this.button3.Location = new System.Drawing.Point(453, 301);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(128, 37);
             this.button3.TabIndex = 3;
@@ -102,12 +103,22 @@ namespace Formulario_MenuStrip
             this.pictureGamabaja.TabIndex = 0;
             this.pictureGamabaja.TabStop = false;
             // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(594, 301);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(128, 37);
+            this.button4.TabIndex = 6;
+            this.button4.Text = "Cerrar";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
             // pictureGama_baja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(734, 450);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.lbmgb);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button3);
@@ -132,5 +143,6 @@ namespace Formulario_MenuStrip
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbmgb;
+        private System.Windows.Forms.Button button4;
     }
 }

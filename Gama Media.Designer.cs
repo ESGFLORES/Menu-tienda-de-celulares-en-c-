@@ -36,6 +36,7 @@ namespace Formulario_MenuStrip
             this.button3 = new System.Windows.Forms.Button();
             this.lblgm = new System.Windows.Forms.Label();
             this.pictureGAmamedia = new System.Windows.Forms.PictureBox();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureGAmamedia)).BeginInit();
             this.SuspendLayout();
             // 
@@ -100,12 +101,22 @@ namespace Formulario_MenuStrip
             this.pictureGAmamedia.TabIndex = 0;
             this.pictureGAmamedia.TabStop = false;
             // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(647, 305);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(128, 37);
+            this.button4.TabIndex = 10;
+            this.button4.Text = "Cerrar";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
             // Gama_Media
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.lblgm);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -130,5 +141,6 @@ namespace Formulario_MenuStrip
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label lblgm;
+        private System.Windows.Forms.Button button4;
     }
 }
