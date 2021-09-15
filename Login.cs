@@ -52,6 +52,12 @@ namespace Formulario_MenuStrip
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            fusuario1 u1 = new fusuario1();
+            u1.ShowDialog();
+        }
     }
 } 
 

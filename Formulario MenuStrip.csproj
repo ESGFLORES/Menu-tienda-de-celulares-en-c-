@@ -95,6 +95,12 @@
     <Compile Include="Envios_internacionales.Designer.cs">
       <DependentUpon>Envios_internacionales.cs</DependentUpon>
     </Compile>
+    <Compile Include="fusuario1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fusuario1.Designer.cs">
+      <DependentUpon>fusuario1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +159,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Envios_internacionales.resx">
       <DependentUpon>Envios_internacionales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fusuario1.resx">
+      <DependentUpon>fusuario1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
