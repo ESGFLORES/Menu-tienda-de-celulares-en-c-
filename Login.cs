@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+
+
 namespace Formulario_MenuStrip
 {
     public partial class Login : Form
@@ -57,6 +60,12 @@ namespace Formulario_MenuStrip
         {
             fusuario1 u1 = new fusuario1();
             u1.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            fusuario2 u2 = new fusuario2();
+            u2.ShowDialog();
         }
     }
 } 
