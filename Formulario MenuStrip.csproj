@@ -145,6 +145,26 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sistemaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sistemaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sistemaDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sistemaDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sistemaDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sistemaDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sistemaDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sistemaDataSet3.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Sucursales.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -212,6 +232,50 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="sistemaDataSet.xsc">
+      <DependentUpon>sistemaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="sistemaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sistemaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sistemaDataSet.xss">
+      <DependentUpon>sistemaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="sistemaDataSet1.xsc">
+      <DependentUpon>sistemaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="sistemaDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sistemaDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sistemaDataSet1.xss">
+      <DependentUpon>sistemaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="sistemaDataSet2.xsc">
+      <DependentUpon>sistemaDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="sistemaDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sistemaDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sistemaDataSet2.xss">
+      <DependentUpon>sistemaDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="sistemaDataSet3.xsc">
+      <DependentUpon>sistemaDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="sistemaDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sistemaDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sistemaDataSet3.xss">
+      <DependentUpon>sistemaDataSet3.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

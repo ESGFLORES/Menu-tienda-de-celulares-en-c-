@@ -29,7 +29,7 @@ namespace Formulario_MenuStrip
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -47,16 +47,14 @@ namespace Formulario_MenuStrip
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.sistemaDataSet = new Formulario_MenuStrip.sistemaDataSet();
+            this.tusuarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tusuarioTableAdapter = new Formulario_MenuStrip.sistemaDataSetTableAdapters.tusuarioTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sistemaDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tusuarioBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(62, 57);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(134, 126);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -104,21 +102,24 @@ namespace Formulario_MenuStrip
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(331, 92);
+            this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tusuarioBindingSource, "nombre", true));
+            this.textBox1.Location = new System.Drawing.Point(306, 76);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 5;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(331, 131);
+            this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tusuarioBindingSource, "clave", true));
+            this.textBox2.Location = new System.Drawing.Point(306, 123);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 6;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(331, 167);
+            this.textBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tusuarioBindingSource, "nivel", true));
+            this.textBox3.Location = new System.Drawing.Point(306, 169);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 7;
@@ -234,12 +235,34 @@ namespace Formulario_MenuStrip
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(62, 57);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(134, 126);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // sistemaDataSet
+            // 
+            this.sistemaDataSet.DataSetName = "sistemaDataSet";
+            this.sistemaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tusuarioBindingSource
+            // 
+            this.tusuarioBindingSource.DataMember = "tusuario";
+            this.tusuarioBindingSource.DataSource = this.sistemaDataSet;
+            // 
+            // tusuarioTableAdapter
+            // 
+            this.tusuarioTableAdapter.ClearBeforeFill = true;
+            // 
             // fusuario2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
-            this.ClientSize = new System.Drawing.Size(660, 450);
+            this.ClientSize = new System.Drawing.Size(572, 450);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
@@ -260,7 +283,10 @@ namespace Formulario_MenuStrip
             this.Controls.Add(this.pictureBox1);
             this.Name = "fusuario2";
             this.Text = "fusuario2";
+            this.Load += new System.EventHandler(this.fusuario2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sistemaDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tusuarioBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -286,5 +312,8 @@ namespace Formulario_MenuStrip
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
+        private sistemaDataSet sistemaDataSet;
+        private System.Windows.Forms.BindingSource tusuarioBindingSource;
+        private sistemaDataSetTableAdapters.tusuarioTableAdapter tusuarioTableAdapter;
     }
 }
