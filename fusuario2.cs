@@ -33,7 +33,9 @@ namespace Formulario_MenuStrip
 
         private void fusuario2_Load(object sender, EventArgs e)
         {
-           
+            // TODO: esta línea de código carga datos en la tabla 'sistemaDataSet.tusuario' Puede moverla o quitarla según sea necesario.
+            this.tusuarioTableAdapter.Fill(this.sistemaDataSet.tusuario);
+
             textBox1.Enabled = false;
             textBox2.Enabled = false;
             comboBox1.Enabled = false;
@@ -196,6 +198,26 @@ namespace Formulario_MenuStrip
                 MessageBox.Show("Error de usuario o clave de acceso", "Error",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            this.tusuarioBindingSource.MoveFirst();
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            this.tusuarioBindingSource.MovePrevious();
+        }
+
+        private void button6_Click_1(object sender, EventArgs e)
+        {
+            this.tusuarioBindingSource.MoveNext();
+        }
+
+        private void button9_Click_1(object sender, EventArgs e)
+        {
+            this.tusuarioBindingSource.MoveLast();
         }
     }
 }
