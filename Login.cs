@@ -59,15 +59,38 @@ namespace Formulario_MenuStrip
 
         private void button3_Click(object sender, EventArgs e)
         {
-            fusuario1 u1 = new fusuario1();
-            u1.ShowDialog();
+            if (textBox1.Text == "usuario1" || textBox2.Text == "clave1")
+            {
+                fusuario1 f1 =  new fusuario1();
+                f1.Show();
+                this.Hide();
+            }
+
+            else
+            {
+                MessageBox.Show("Error de usuario o clave de acceso", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            fusuario2 u2 = new fusuario2();
-            u2.ShowDialog();
+            if (textBox1.Text == "usuario1" || textBox2.Text == "clave1")
+            {
+                fusuario2 f2 = new fusuario2();
+                f2.Show();
+                this.Hide();
+            }
+
+            else
+            {
+                MessageBox.Show("Error de usuario o clave de acceso", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+         
+           
         }
+       
     }
 } 
 

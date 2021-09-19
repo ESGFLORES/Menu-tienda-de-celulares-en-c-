@@ -32,5 +32,15 @@ namespace Formulario_MenuStrip.Properties {
                 return ((string)(this["sistemaConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\\sistema.accdb")]
+        public string sistemaConnectionString1 {
+            get {
+                return ((string)(this["sistemaConnectionString1"]));
+            }
+        }
     }
 }

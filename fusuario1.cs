@@ -42,5 +42,10 @@ namespace Formulario_MenuStrip
         {
             button10.Visible = true;
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
