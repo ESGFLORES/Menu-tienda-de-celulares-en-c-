@@ -30,8 +30,8 @@ namespace Formulario_MenuStrip
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fusuario1));
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtusuariof1 = new System.Windows.Forms.TextBox();
+            this.txtclavef1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -48,23 +48,24 @@ namespace Formulario_MenuStrip
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.bSQmenuprincipal = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtusuariof1
             // 
-            this.textBox1.Location = new System.Drawing.Point(287, 52);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 20);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtusuariof1.Location = new System.Drawing.Point(287, 52);
+            this.txtusuariof1.Name = "txtusuariof1";
+            this.txtusuariof1.Size = new System.Drawing.Size(121, 20);
+            this.txtusuariof1.TabIndex = 0;
+            this.txtusuariof1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // txtclavef1
             // 
-            this.textBox2.Location = new System.Drawing.Point(287, 111);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(121, 20);
-            this.textBox2.TabIndex = 1;
+            this.txtclavef1.Location = new System.Drawing.Point(287, 111);
+            this.txtclavef1.Name = "txtclavef1";
+            this.txtclavef1.Size = new System.Drawing.Size(121, 20);
+            this.txtclavef1.TabIndex = 1;
             // 
             // label1
             // 
@@ -256,12 +257,23 @@ namespace Formulario_MenuStrip
             this.comboBox1.TabIndex = 17;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
+            // bSQmenuprincipal
+            // 
+            this.bSQmenuprincipal.Location = new System.Drawing.Point(247, 437);
+            this.bSQmenuprincipal.Name = "bSQmenuprincipal";
+            this.bSQmenuprincipal.Size = new System.Drawing.Size(115, 52);
+            this.bSQmenuprincipal.TabIndex = 18;
+            this.bSQmenuprincipal.Text = "Ingresar al menu principall";
+            this.bSQmenuprincipal.UseVisualStyleBackColor = true;
+            this.bSQmenuprincipal.Click += new System.EventHandler(this.bSQmenuprincipal_Click);
+            // 
             // fusuario1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
-            this.ClientSize = new System.Drawing.Size(626, 450);
+            this.ClientSize = new System.Drawing.Size(662, 514);
+            this.Controls.Add(this.bSQmenuprincipal);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox1);
@@ -278,8 +290,8 @@ namespace Formulario_MenuStrip
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtclavef1);
+            this.Controls.Add(this.txtusuariof1);
             this.ForeColor = System.Drawing.Color.Blue;
             this.Name = "fusuario1";
             this.Text = "fusuario1";
@@ -292,8 +304,8 @@ namespace Formulario_MenuStrip
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtusuariof1;
+        private System.Windows.Forms.TextBox txtclavef1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -310,5 +322,6 @@ namespace Formulario_MenuStrip
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button bSQmenuprincipal;
     }
 }

@@ -22,7 +22,7 @@ namespace Formulario_MenuStrip
         {
             //Crear cadena de conexion a la base
             miconexion = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Sistema\sistema.accdb ");
-
+            
             InitializeComponent();
         }
 
@@ -74,38 +74,38 @@ namespace Formulario_MenuStrip
 
         private void button3_Click(object sender, EventArgs e)
         {
-            try { 
-            
+            try
+            {
                 OleDbCommand guardar = new OleDbCommand();
                 miconexion.Open();
                 guardar.Connection = miconexion;
                 guardar.CommandType = CommandType.Text;
+                guardar.CommandText = "INSERT INTO tusuario ([nombre], [clave],[nivel]) Values('" + textBox1.Text.ToString() + "','" + textBox2.Text.ToString() + "','" + comboBox1.Text.ToString() + "')";
 
-                guardar.CommandText = "INSERT INTO tusuario ([Nombre], [Clave], [Nivel])Values(" + textBox1.Text.ToString() + ", " + 
-                    textBox2.Text.ToString() + "," + comboBox1.Text.ToString() + ")";
+
 
                 guardar.ExecuteNonQuery();
                 miconexion.Close();
-
                 button2.Visible = true;
                 button3.Visible = false;
-
+                //Desabilitar campos, se activan al crear nuevo registro
                 textBox1.Enabled = false;
                 textBox2.Enabled = false;
                 comboBox1.Enabled = false;
                 button2.Focus();
-
+                //Mensaje que se guardo correctamente
                 MessageBox.Show("Usuario agregado con éxito", "Ok",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 this.tusuarioTableAdapter.Fill(this.sistemaDataSet.tusuario);
                 this.tusuarioBindingSource.MoveLast();
-                }
+            }
             catch (Exception err)
             {
                 MessageBox.Show(err.Message);
             }
-            
+
+
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -128,32 +128,40 @@ namespace Formulario_MenuStrip
                 miconexion.Open();
                 actualizar.Connection = miconexion;
                 actualizar.CommandType = CommandType.Text;
+                string nom = textBox1.Text.ToString();
+                string cla = textBox2.Text.ToString();
+                string niv = comboBox1.Text;
+                //Podemos actualizar todos los campos de una vez
+                actualizar.CommandText = "UPDATE tusuario SET nombre = '" + nom + "',clave = '" + cla + "',nivel = '" + niv + "' WHERE nombre = '" + usuario_modificar + "'";
 
-                string nombre = textBox1.Text.ToString();
-                string clave = textBox2.Text.ToString();
-                string nivel = comboBox1.Text;
 
-                actualizar.CommandText = "UPDATE tusuario SET nombre = " + nombre + ", clave = " +
-                    clave + ", nivel = " + nivel + "WHERE nombre = " + usuario_modificar + "";
-
+                //Otra forma es utilizar el comando UPDATE para cada campo
+                //actualizar.CommandText = "UPDATE tusuario set nombre = '" + nom + "' 
+                // WERE nombre = '" + usuario_modificar + "'";
+                //actualizar.CommandText = "UPDATE tusuario set clave = '" + cla + "' 
+                //WERE nombre = '" + usuario_modificar + "'";
+                //actualizar.CommandText = "UPDATE tusuario set nivel = '" + niv + "' 
+                //WERE nombre = '" + usuario_modificar + "'";
                 actualizar.ExecuteNonQuery();
                 miconexion.Close();
-
                 button7.Visible = true;
                 button8.Visible = false;
-
                 textBox1.Enabled = false;
                 textBox2.Enabled = false;
                 comboBox1.Enabled = false;
+                //Mensaje que se guardo correctamente
 
                 MessageBox.Show("Usuario actualizado con éxito", "Ok",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                //this.tusuarioTableAdapter.Fill(this.sistemaDataSet.tusuario);
             }
             catch (Exception err)
             {
                 MessageBox.Show(err.Message);
             }
         }
+
 
         private void button5_Click(object sender, EventArgs e)
         {
@@ -163,17 +171,17 @@ namespace Formulario_MenuStrip
                 miconexion.Open();
                 eliminar.Connection = miconexion;
                 eliminar.CommandType = CommandType.Text;
-
-                eliminar.CommandText = "DELETE FROM tusuario WHERE nombre = " + 
-                    textBox1.Text.ToString() + "";
+                eliminar.CommandText = "DELETE FROM tusuario WHERE nombre = '" +
+                textBox1.Text.ToString() + "'";
 
                 eliminar.ExecuteNonQuery();
                 this.tusuarioBindingSource.MoveNext();
                 miconexion.Close();
-
+                //Mensaje que se guardo correctamente
                 MessageBox.Show("Usuario eliminado con éxito", "Ok",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+                //this.tusuarioTableAdapter.Fill(this.sistemaDataSet.tusuario); 
                 this.tusuarioBindingSource.MovePrevious();
             }
             catch (Exception err)

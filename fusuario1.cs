@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 
 namespace Formulario_MenuStrip
@@ -17,6 +18,7 @@ namespace Formulario_MenuStrip
         {
             InitializeComponent();
         }
+        SqlConnection conex = new SqlConnection("server=LAPTOP-FLORES-H;database= tusuario; integrated security = true");
 
         private void button8_Click(object sender, EventArgs e)
         {
@@ -46,6 +48,26 @@ namespace Formulario_MenuStrip
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void bSQmenuprincipal_Click(object sender, EventArgs e)
+        {
+            conex.Open();
+            string consult = "select * from usuarios where usuarios ='" + txtusuariof1.Text + "'and pass= '" + txtclavef1.Text + "'";
+            SqlCommand comand = new SqlCommand(consult,conex);
+            SqlDataReader lector;
+            lector = comand.ExecuteReader();
+            
+            if (lector.HasRows==true)
+            {
+                MessageBox.Show("Bienvenido");
+
+            }
+            else
+            {
+                MessageBox.Show(" usuario o contraseña incorrectos");
+            }
+            conex.Close();
         }
     }
 }

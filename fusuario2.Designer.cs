@@ -36,6 +36,8 @@ namespace Formulario_MenuStrip
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tusuarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.sistemaDataSet = new Formulario_MenuStrip.sistemaDataSet();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -50,12 +52,10 @@ namespace Formulario_MenuStrip
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button11 = new System.Windows.Forms.Button();
-            this.sistemaDataSet = new Formulario_MenuStrip.sistemaDataSet();
-            this.tusuarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tusuarioTableAdapter = new Formulario_MenuStrip.sistemaDataSetTableAdapters.tusuarioTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sistemaDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tusuarioBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sistemaDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -109,6 +109,16 @@ namespace Formulario_MenuStrip
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 5;
+            // 
+            // tusuarioBindingSource
+            // 
+            this.tusuarioBindingSource.DataMember = "tusuario";
+            this.tusuarioBindingSource.DataSource = this.sistemaDataSet;
+            // 
+            // sistemaDataSet
+            // 
+            this.sistemaDataSet.DataSetName = "sistemaDataSet";
+            this.sistemaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // textBox2
             // 
@@ -276,16 +286,6 @@ namespace Formulario_MenuStrip
             this.button11.UseVisualStyleBackColor = true;
             this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
-            // sistemaDataSet
-            // 
-            this.sistemaDataSet.DataSetName = "sistemaDataSet";
-            this.sistemaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tusuarioBindingSource
-            // 
-            this.tusuarioBindingSource.DataMember = "tusuario";
-            this.tusuarioBindingSource.DataSource = this.sistemaDataSet;
-            // 
             // tusuarioTableAdapter
             // 
             this.tusuarioTableAdapter.ClearBeforeFill = true;
@@ -318,9 +318,9 @@ namespace Formulario_MenuStrip
             this.Name = "fusuario2";
             this.Text = "fusuario2";
             this.Load += new System.EventHandler(this.fusuario2_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sistemaDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tusuarioBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sistemaDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
