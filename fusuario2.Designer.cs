@@ -316,7 +316,6 @@ namespace Formulario_MenuStrip
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "fusuario2";
-            this.Text = "fusuario2";
             this.Load += new System.EventHandler(this.fusuario2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tusuarioBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sistemaDataSet)).EndInit();

@@ -36,18 +36,14 @@ namespace Formulario_MenuStrip
         {
             
             
-                if (textBox1.Text == "usuario1" || textBox2.Text == "clave1")
-                {
+               
+                
                     Dialogos principal = new Dialogos();
                     principal.Show();
                     this.Hide();
-                }
+                
             
-            else
-            {
-                MessageBox.Show("Error de usuario o clave de acceso", "Error",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            
 
 
             
@@ -74,13 +70,17 @@ namespace Formulario_MenuStrip
 
         private void button4_Click(object sender, EventArgs e)
         {
-            
-            
+            if (textBox1.Text == "grupo2" || textBox2.Text == "grupo2")
+            {
                 fusuario2 f2 = new fusuario2();
                 f2.Show();
                 this.Hide();
-           
-            
+            }
+            else
+            {
+                MessageBox.Show("Error de usuario o clave de acceso", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             try
             {
                 //Creado la variable para la nueva conexion
@@ -128,7 +128,31 @@ namespace Formulario_MenuStrip
             
         }
 
+        private void button5_Click(object sender, EventArgs e)
+       
+        {
+            if (textBox1.Text == "grupo2" || textBox2.Text == "grupo2")
 
+
+            {
+                USUARIOS principal = new USUARIOS();
+                principal.Show();
+                this.Hide();
+            }
+
+            else
+            {
+                MessageBox.Show("Error de usuario o clave de acceso", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            fconsultas principal = new fconsultas();
+            principal.Show();
+            this.Hide();
+        }
     }
 
 }

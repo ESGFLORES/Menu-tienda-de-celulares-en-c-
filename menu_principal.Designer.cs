@@ -88,21 +88,21 @@ namespace Formulario_MenuStrip
             // opcion1ToolStripMenuItem
             // 
             this.opcion1ToolStripMenuItem.Name = "opcion1ToolStripMenuItem";
-            this.opcion1ToolStripMenuItem.Size = new System.Drawing.Size(162, 26);
+            this.opcion1ToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.opcion1ToolStripMenuItem.Text = "Gama Alta";
             this.opcion1ToolStripMenuItem.Click += new System.EventHandler(this.opcion1ToolStripMenuItem_Click);
             // 
             // oPcion2ToolStripMenuItem
             // 
             this.oPcion2ToolStripMenuItem.Name = "oPcion2ToolStripMenuItem";
-            this.oPcion2ToolStripMenuItem.Size = new System.Drawing.Size(162, 26);
+            this.oPcion2ToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.oPcion2ToolStripMenuItem.Text = "Gama media";
             this.oPcion2ToolStripMenuItem.Click += new System.EventHandler(this.oPcion2ToolStripMenuItem_Click);
             // 
             // opcion3ToolStripMenuItem
             // 
             this.opcion3ToolStripMenuItem.Name = "opcion3ToolStripMenuItem";
-            this.opcion3ToolStripMenuItem.Size = new System.Drawing.Size(162, 26);
+            this.opcion3ToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.opcion3ToolStripMenuItem.Text = "Gama baja";
             this.opcion3ToolStripMenuItem.Click += new System.EventHandler(this.opcion3ToolStripMenuItem_Click);
             // 

@@ -91,6 +91,10 @@ namespace Formulario_MenuStrip
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
             Close();
+            Login principal = new Login();
+            principal.Show();
+            this.Hide();
+
         }
         private void opcion2ToolStripMenuItem3_Click(object sender, EventArgs e)
         {
