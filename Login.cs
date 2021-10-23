@@ -152,6 +152,8 @@ namespace Formulario_MenuStrip
             fconsultas principal = new fconsultas();
             principal.Show();
             this.Hide();
+
+
         }
     }
 
